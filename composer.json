@@ -1,0 +1,40 @@
+{
+    "name": "exdeliver/drift",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Hoendervanger",
+            "email": "renalpha@hotmail.com",
+            "homepage": "https://exdeliver.nl"
+        }
+    ],
+    "homepage": "https://github.com/exdeliver/drift",
+    "keywords": [
+        "Laravel",
+        "drift"
+    ],
+    "require": {
+        "vimeo/psalm": "*",
+        "nunomaduro/phpinsights": "dev-master",
+        "phpstan/phpstan": "1.12.x-dev",
+        "ext-simplexml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Exdeliver\\Drift\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Exdeliver\\Drift\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Exdeliver\\Drift\\DriftServiceProvider"
+            ]
+        }
+    }
+}
